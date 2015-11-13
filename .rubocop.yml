@@ -1,0 +1,18 @@
+# This cop checks for top-level documentation of classes and modules.
+Style/Documentation:
+  Enabled: false
+
+# This cop checks for snake_case ruby file names.
+# It is off because it triggers on ruby shebang.
+Style/FileName:
+  Enabled: false
+
+# This cop wisely checks for eval, but I use it carefully so
+# it'll have to be silent
+Lint/Eval:
+  Enabled: false
+
+# My namespace puts methods 5 indents in 80->90
+# many methods add at least 1 more indent 90->92
+Metrics/LineLength:
+  Max: 92
