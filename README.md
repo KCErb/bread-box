@@ -8,43 +8,33 @@
 
 Box is a tool for managing packages in other languages. Right now that just means MATLAB but I'm very open to supporting others like R and Octave.
 
-# Planned Features
+## Installation
+
+If you have Ruby just run
+
+    $ gem install bread-box
+
+From the command line. If you don't have Ruby, go find one of the many many excellent tutorials on getting Ruby installed and then come back.
+
+If you don't know whether or not you have Ruby you can go to the Command Line / Terminal and type `which ruby`. If you have ruby a path will come back like `/usr/bin/ruby`. If you don't have `ruby` nothing will happen and you might think your computer ignored you.
+
+## Planned Features
 
 This is no where near complete so here's what I hope to create
 
     $ bread-box new matlab package SingleCoilSTCR
 
-will create a new matlab package called `SingleCoilSTCR` using the bread template. This package will be easily publishable to ruby gems and usable to others via
+will create a new matlab package called `SingleCoilSTCR` using the bread template. This packagwill be easily publishable to ruby gems and usable to others via
 
     $ bread install single-coil-stcr
 
-# Why not use Ruby Gems and Bundler like a normal person?
+## Why not use Ruby Gems and Bundler like a normal person?
 
-Well the idea here is that folks are passing around MATLAB scripts, not Ruby ones. But they aren't using version control, their tools aren't modular and a lot of time and money is wasted. If we just had a way to centralize our MATLAB code like we have for Ruby it'd be great.
+Well the idea here is that folks are passing around MATLAB scripts, not Ruby ones. But they aren'using version control, their tools aren't modular and a lot of time and money is wasted. If wjust had a way to centralize our MATLAB code like we have for Ruby it'd be great.
 
-Also Ruby Gems is going to install stuff in a person's Ruby, but a new scientist may not know where that is or even have Ruby. :bread: is going to install a matlab package in a person's `~/.bread/matlab/packages` directory and make sure their boilerplate files include that directory in their projects.
+Also Ruby Gems is going to install stuff in a person's Ruby, but a new scientist may not knowhere that is or even have Ruby. :bread: is going to install a matlab package in a person'`~/.bread/matlab/packages` directory and make sure their boilerplate files include that directorin their projects.
 
-Also if we can start getting scientist used to using the command line, git tools, and MATLAB packages we'll bring them a lot closer to a better world for science!
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'bread-box'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install bread-box
-
-## Usage
-
-TODO: Write usage instructions here
+Also if we can start getting scientist used to using the command line, git tools, and MATLApackages we'll bring them a lot closer to a better world for science!
 
 ## Development
 
@@ -54,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bread-box.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bread/bread-box.
 
 
 ## License
